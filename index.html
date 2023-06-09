@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boho & Bark</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chatbot-container"></div>
+
+  <script>
+    function loadBotpressChat() {
+      var botpressConfig = {
+        host: 'https://cdn.botpress.cloud',
+        botId: '5c3384bf-595d-4fcd-bf96-6d9d7751e94c',
+        botName: 'My Chatbot',
+        locale: 'en',
+        welcomeMessage: 'Hi, how can I help you?',
+        injectStyles: false
+      };
+
+      var s = document.createElement('script');
+      s.src = 'https://cdn.botpress.cloud/webchat/v0/inject.js';
+      s.onload = function () {
+        var config = document.createElement('script');
+        config.src = 'https://mediafiles.botpress.cloud/5c3384bf-595d-4fcd-bf96-6d9d7751e94c/webchat/config.js';
+        config.defer = true;
+        document.getElementById('chatbot-container').appendChild(config);
+      };
+
+      document.body.appendChild(s);
+    }
+
+    loadBotpressChat();
+  </script>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Boho&Bark</div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+          <!-- USING CHECKBOX HACK -->
+         
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+    
+            <li class="services">
+              <a href="/">Services</a>
+    
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="Healthfood.html">Health Food</a></li>
+                <li><a href="breeding.html">Breeding</a></li>
+              </ul>
+    
+            </li>
+    
+            <li><a href="blog.html">Blog</a></li>
+          </div>
+        </ul>
+      </nav>
+    <img src="images/WhatsApp Image 2023-06-09 at 13.45.58.jpg">
+    <div class="intro">
+      <p>is an all-in-one platform dedicated to providing comprehensive care for dogs. Our mission is to ensure the well-being and happiness of dogs through expert guidance, reliable resources, and quality products. Whether you're a dog owner, breeder, or simply a dog lover, PawfectCare.com is here to assist you every step of the way.</p>
+    </div>
+</body>
+</html>
